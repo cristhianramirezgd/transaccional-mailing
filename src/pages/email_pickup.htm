@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="es">
+<style>
+body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #666; }
+#shipped_email { width: 550px; margin-left: auto; margin-right: auto; }
+#shipped_email_client_name { font-size: 20px; margin-top: 20px; color: #000; }
+#shipped_email_intro { margin-top: 20px; }
+#shipped_order_num_title, #shipped_order_date_title { font-weight: normal; }
+#shipped_ship_to { float: left; border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; min-width: 200px; max-width: 250px; }
+#shipped_ship_to_title { font-weight: bold; }
+#shipped_track_package { float: left; border: 1px solid #ccc; width: 100%; padding: 10px; margin-bottom: 10px; font-weight: bold; }
+#shipped_item_table { border-collapse: collapse; width: 100%; font-size: 14px; }
+#shipped_item_head { font-weight: bold; background: #ccc; }
+#shipped_item_head td { padding: 12px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+.product_line  td { padding: 12px; border-bottom: 1px solid #ccc; }
+.product_image img { width: 50px; }
+.product_quantity { text-align:right; }
+.shipped_item_total td { padding-top: 8px; padding-right: 12px;	}
+#shipped_email_signature { margin-top: 20px; margin-bottom: 20px; }
+</style>
+
+<body>
+	<div id="shipped_email">
+		[[shipped_email_banner]]
+		<div style="text-align: right; margin-top:10px">
+			<span style="font-size: 20px">Confirmación de Disponibilidad</span>
+			[[shipped_order_num]]
+		</div>
+		[[shipped_email_client_name]]
+		[[shipped_email_pickup_intro]]
+		<div style="float:left; width:550px;">
+			<div style="overflow: hidden; margin-top:20px">
+				[[shipped_pickup_location]]
+				[[shipped_track_package]]
+			</div>
+			[[shipped_item_details]]
+			[[shipped_prev_details]]
+			<div id="shipped_email_signature">
+				Gracias por preferirnos! No dudes en contactarnos si tienes dudas o comentarios.<br><br>
+				Atentamente,<br><br><br>
+				Servicio al Cliente Easy Colombia<br>
+				Líneas de atención al cliente: 7429899 – 018000 413800<br>
+				clientes@easy.com.co
+			</div>
+		</div>
+		<div style="float:left; width:550px; margin-top: 15px; font-size: 9px">
+			<b>CONDICIONES Y RESTRICCIONES:</b><br>
+			<ol type="a">
+				<li>No todos los productos están disponibles para retiro en tienda, sólo los marcados con el logo de “Retiro en tienda”</li>
+				<li>Para aplicar a la modalidad “Retiro en tienda”, todos los productos facturados deben estar clasificados en dicha modalidad, si algún producto REQUIERE ENVÍO se debe generar el pedido entrega a domicilio.</li>
+				<li>PROMESA DE COMPRA: La promesa de entrega al cliente para retiro en tienda es de 24 horas después de que la transacción haya sido efectiva.</li>
+				<li>CORREOS: Luego de realizar la compra bajo la modalidad Retiro en Tienda, el cliente recibirá un correo de confirmación y se le indicará:
+					<ol type="1">
+						<li>El número de pedido (Obligatorio para retiro de la compra) 
+						<li>Tienda de retiro
+						<li>Tiempo para el retiro
+					</ol>
+				</li>
+				<li>TIEMPO DE RETIRO: Una vez confirmemos que el pedido está listo para retirar, el cliente podrá acercarse a la tienda seleccionada.  *Si el pedido presenta alguna novedad nos comunicaremos dentro de las siguientes 24 horas”</li>
+				<li>TIEMPO MÁXIMO PARA EL RETIRO DEL PRODUCTO: El tiempo máximo para que el cliente pueda acercase a la tienda y retirar su compra es de 8 días calendario una vez la transacción haya sido efectiva. En caso de NO ser retirada la compra en el tiempo establecido se procederá a realizar la devolución del dinero según las políticas de devolución de Easy Colombia.</li>
+				<li>REQUISITOS PARA EL RETIRO DE LA COMPRA: Para que el cliente o el autorizado pueda retirar la mercancía de la tienda debe presentar: 1) el documento de identificación original (no se aceptan contraseñas) y 2) e indicar el número de orden.
+					<ul>
+						<li>El número de orden es indispensable para retirar la compra ya sea para el titular de la compra o para el autorizado
+						<li>El número de orden de compra se encuentra en la parte superior derecha y al finalizar la descripción de los datos del comprador 
+					</ul>
+				</li>
+				<li>Si NO es el titular, NI la persona autorizada, al momento de retirar el pedido la persona que se presente deberá llevar la siguiente documentación:
+					<ul>
+						<li>El número de orden de compra</li>
+						<li>Documento de identidad original (no se aceptan contraseñas)</li>
+						<li>Poder autenticado donde el titular autorice expresamente a retirar el pedido</li>
+						<li>Fotocopia del documento de identidad del titular</li>
+					</ul>
+				</li>
+				<li>HORARIO DE ATENCIÓN: El horario de atención a los clientes que retiren productos con esta modalidad “Retiro en Tienda” será el mismo que permanece el local abierto al público.</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>
