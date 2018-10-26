@@ -1,24 +1,62 @@
 ---
 subject: Confirmación de envío | Universomascotas.co
 ---
-
-
-	<div id="shipped_email">
-		[[shipped_email_banner]]
-		<div style="text-align: right; margin-top:10px">
-			<span style="font-size: 20px">Confirmación de Envío</span>
+<container>
+		<center>
+			[[shipped_email_banner]]
+		</center>
+</container>
+<container>
+	<row>
+	    <columns><h1>Confirmación de Envío</h1></columns>
+	</row>
+</container>
+<container>
+	<row>
+		<columns>
 			[[shipped_order_num]]
-		</div>
-		[[shipped_email_client_name]]
-		[[shipped_email_intro]]
-		<div style="float:left; width:550px;">
-			<div style="overflow: hidden; margin-top:20px">
-				[[shipped_ship_to]]
-				[[shipped_track_package]]
-			</div>
+		</columns>
+	</row>
+	<row>
+		<columns>
+		[[shipped_email_client_name]],
+		</columns>
+	</row>
+	<row>
+		<columns>
+			[[shipped_email_intro]]
+		</columns>
+	</row>
+	<row>
+		<columns>
+			[[shipped_ship_to]]
+		</columns>
+	</row>
+	<row>
+		<columns>
+			[[shipped_track_package]]
+		</columns>
+	</row>
+</container>
+<container>
+	<row>
+		<columns>
 			[[shipped_item_details]]
-			[[shipped_prev_details]]
+		</columns>
+	</row>
+	<row>
+		<columns>
+			[[shipped_item_details]]
+		</columns>
+	</row>
+	<row>
+		<columns>
 			[[shipped_pend_details]]
+		</columns>
+	</row>
+	<row>
+		<columns>
 			[[shipped_email_signature]]
-		</div>
-	</div>
+		</columns>
+	</row>
+</container>
