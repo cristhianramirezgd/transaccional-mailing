@@ -1,19 +1,17 @@
 ---
 subject: Confirmación de envío | Universomascotas.co
 ---
-<container>
-		<center>
-			[[shipped_email_banner]]
-		</center>
-</container>
-<container>
+{{> header}}
+{{> banner}}
+<container class="bg-white">
 	<row>
-	    <columns><h1>Confirmación de Envío</h1></columns>
+	    <columns><h1 class="text-center title-mail">Confirmación de Envío</h1></columns>
 	</row>
 </container>
-<container>
+<container class="bg-white">
 	<row>
-		<columns>
+		<columns></columns>	
+		<columns class="text-right ref-number">
 			[[shipped_order_num]]
 		</columns>
 	</row>
@@ -38,7 +36,7 @@ subject: Confirmación de envío | Universomascotas.co
 		</columns>
 	</row>
 </container>
-<container>
+<container class="bg-white">
 	<row>
 		<columns>
 			[[shipped_item_details]]
@@ -60,3 +58,4 @@ subject: Confirmación de envío | Universomascotas.co
 		</columns>
 	</row>
 </container>
+{{> footer}}

@@ -1,15 +1,12 @@
 ---
 subject: Carrito abandonado | Universomascotas.co
 ---
-<container>
+{{> header}}
+{{> banner}}
+<container class="bg-white">
 	<row>
-		<columns>
-		<center>[[email_banner]]</center>
-		</columns>
-	</row>
-	<row>
-		<columns>
-		[[email_client_name]]
+		<columns class="padding-top">
+		Hola [[email_client_name]],
 		</columns>
 	</row>
 	<row>
@@ -28,3 +25,4 @@ subject: Carrito abandonado | Universomascotas.co
 		</columns>
 	</row>
 </container>
+{{> footer}}

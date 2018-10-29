@@ -1,28 +1,26 @@
 ---
 subject: Confirmación de Disponibilidad | Universomascotas.co
 ---
-<container>
-	<center>
-		[[shipped_email_banner]]
-	</center>
-</container>
-<container>
+{{> header}}
+{{> banner}}
+<container class="bg-white">
 	<row>
 		<columns>
-			<h1>Confirmación de Disponibilidad</h1>
+			<h1 class="text-center title-mail">Confirmación de Disponibilidad</h1>
 		</columns>
 	</row>
 </container>
-<container>
+<container class="bg-white">
 	<row>
-		<columns>
+		<columns></columns>	
+		<columns class="text-right ref-number">
 			[[shipped_order_num]]
 		</columns>
 	</row>
 </container>
-<container>
+<container class="bg-white">
 	<row>
-		<columns>[[shipped_email_client_name]]</columns>
+		<columns>hola [[shipped_email_client_name]],</columns>
 	</row>
 	<row>
 		<columns>[[shipped_email_pickup_intro]]</columns>
@@ -49,7 +47,7 @@ subject: Confirmación de Disponibilidad | Universomascotas.co
 		</columns>
 	</row>
 </container>
-<container>
+<container class="bg-white">
 	<row>
 		<columns>
 			<center><b style="font-size:10px;">CONDICIONES Y RESTRICCIONES:</b></center>
@@ -85,3 +83,4 @@ subject: Confirmación de Disponibilidad | Universomascotas.co
 		</columns>
 	</row>
 </container>
+{{> footer}}

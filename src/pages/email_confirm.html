@@ -1,13 +1,12 @@
 ---
 subject: Confirmación | Universomascotas.co
 ---
-<container>
-	<center>[[confirm_email_banner]]</center>
-</container>
-<container>
+{{> header}}
+{{> banner}}
+<container class="bg-white">
 	<row>
-		<columns>
-		[[confirm_email_client_name]]
+		<columns class="padding-top">
+		Hola [[confirm_email_client_name]],
 		</columns>
 	</row>
 	<row>
@@ -17,10 +16,10 @@ subject: Confirmación | Universomascotas.co
 	</row>
 	<row>
 		<columns>
-				[[confirm_order_num]]
-		</columns>
-		<columns>
 				[[confirm_order_date]]
+		</columns>
+		<columns class="text-right ref-number">
+				[[confirm_order_num]]
 		</columns>
 	</row>
 	<row>
@@ -46,10 +45,11 @@ subject: Confirmación | Universomascotas.co
 		</columns>
 	</row>
 </container>
-<container>
+<container class="bg-white">
 	<row>
 		<columns>
 			<p style="font-size: 10px">Estimado Cliente, recuerde que durante la entrega del producto por parte de la transportadora, ésta deberá permitir que se verifique de manera completa el producto entregado. Solo hasta que esta verificación se realice, usted podrá firmar la guía de entrega a satisfacción.</p>
 		</columns>
 	</row>
 </container>
+{{> footer}}
